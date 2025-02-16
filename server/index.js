@@ -11,7 +11,7 @@ mongoose.connect(config.mongoose.url).then(()=> {
 })
 app.use(express.json())
 app.use(cors({
-    origin:["http://localhost:5173"],
+    origin:["*"],
     credentials:true
 }))
 app.use(express.urlencoded({extended: true}))
